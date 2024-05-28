@@ -42,5 +42,8 @@ serie_materias = pd.Series(index=materias, data=calificaciones) # Se puede defin
 # print(serie_materias.cumsum()) # Suma acumulativa
 # print(serie_materias.cumprod()) # Producto acumulativo
 
-serie_materias.replace(to_replace=10, value=100)
-print(serie_materias)
+# serie_materias.replace(to_replace=10, value=100)
+# print(serie_materias)
+
+# filtrado
+print(serie_materias[serie_materias >= 9])
